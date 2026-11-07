@@ -1,6 +1,6 @@
 {
   "name": "dsh-proj-todo",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
   "description": "A persistent project-level todo list in the DSH right sidebar, with a model-facing proj_todo tool",
   "type": "module",
