@@ -12,6 +12,7 @@ A graphical plugin for managing project todos in DSH's right sidebar. Todo data 
 - Compact and detailed views
 - The detailed view includes a Gantt chart showing creation, DDL, completion times, and a current-time marker
 - Gantt range presets: All, Today, Within a week, From today, Manual
+- Hover the Gantt chart to see the time at the cursor position
 - Click a todo in the detailed view to expand its time details
 
 ## Installation
