@@ -2,7 +2,7 @@
   "name": "dsh-proj-todo",
   "version": "0.1.1",
   "private": true,
-  "description": "A graphical Todo list in the DSH right sidebar, stored at <project>/.dsh/todo.jsonl",
+  "description": "A persistent project-level todo list in the DSH right sidebar, with a model-facing proj_todo tool",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -15,6 +15,7 @@
   "files": [
     "lib/index.js",
     "lib/todo-store.js",
+    "lib/proj-todo-tool.js",
     "lib/client.js",
     "cordis.patch.yml",
     "locale/*.json",
@@ -34,7 +35,9 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/cordis": "~4.1.0"
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.1",
+    "@deepseek-ai/schemastery": "~3.19.0"
   },
   "license": "MIT"
 }
