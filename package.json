@@ -1,6 +1,6 @@
 {
   "name": "dsh-proj-todo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "A graphical Todo list in the DSH right sidebar, stored at <project>/.dsh/todo.jsonl",
   "type": "module",
