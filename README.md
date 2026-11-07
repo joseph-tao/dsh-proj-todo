@@ -1,31 +1,33 @@
 # dsh-proj-todo
 
-在 DSH 右侧栏中管理当前项目待办的图形化插件。待办数据保存在工作区的 `.dsh/todo.jsonl` 中。
+[中文](README_cn.md) | [English](README.md)
 
-## 功能
+A graphical plugin for managing project todos in DSH's right sidebar. Todo data is stored in the workspace's `.dsh/todo.jsonl`.
 
-- 在 DSH Web 右侧栏添加、编辑、删除和完成待办
-- 支持待办分组、DDL 以及创建/完成时间
-- 支持按状态、分组筛选，以及按时间、DDL、分组排序
-- 提供紧凑与详细两种视图
-- 详细视图包含甘特图，可显示创建、DDL、完成时间和当前时间标记
-- 甘特图支持显示范围预设：全部、今天内、一周内、从今天开始、手动
-- 点击详细视图中的待办可展开查看时间详情
+## Features
 
-## 安装
+- Add, edit, delete, and complete todos in DSH Web's right sidebar
+- Supports todo groups, DDLs, and created/completed timestamps
+- Filter by status and group, and sort by time, DDL, or group
+- Compact and detailed views
+- The detailed view includes a Gantt chart showing creation, DDL, completion times, and a current-time marker
+- Gantt range presets: All, Today, Within a week, From today, Manual
+- Click a todo in the detailed view to expand its time details
+
+## Installation
 
 ```bash
 dsh plugin --profile web add github:joseph-tao/dsh-proj-todo
 ```
 
-安装后启动或刷新 DSH Web，打开右侧栏即可使用。
+After installation, start or refresh DSH Web and open the right sidebar.
 
-## 数据存储
+## Data storage
 
-每个工作区的待办保存在：
+Todos for each workspace are stored at:
 
 ```text
 <workspace>/.dsh/todo.jsonl
 ```
 
-删除工作区中的 `.dsh/todo.jsonl` 不会影响插件本身，但会清空该工作区的待办记录。
+Deleting `.dsh/todo.jsonl` from a workspace will not affect the plugin itself, but it will clear that workspace's todo records.
