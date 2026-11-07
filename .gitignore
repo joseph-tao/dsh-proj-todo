@@ -1,10 +1,6 @@
 node_modules/
 .dsh/
 
-# Screenshots and local debug artifacts
-/debug*.png
-/dsh-home.png
-
 # Logs
 *.log
 npm-debug.log*
