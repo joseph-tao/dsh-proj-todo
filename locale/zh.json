@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "项目待办",
+    "description": "右栏图形化待办列表，保存在 .dsh/todo.jsonl。"
+  }
+}

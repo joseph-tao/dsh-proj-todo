@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Project Todos",
+    "description": "A graphical todo list in the right sidebar, stored at .dsh/todo.jsonl."
+  }
+}
