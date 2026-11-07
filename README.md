@@ -7,10 +7,10 @@ A graphical plugin for managing project todos in DSH's right sidebar. Todo data 
 ## Features
 
 - Add, edit, delete, and complete todos in DSH Web's right sidebar
-- Supports todo groups, DDLs, and created/completed timestamps
+- Supports todo groups, DDLs, and start/completed timestamps
 - Filter by status and group, and sort by time, DDL, or group
 - Compact and detailed views
-- The detailed view includes a Gantt chart showing creation, DDL, completion times, and a current-time marker
+- The detailed view includes a Gantt chart showing start, DDL, completion times, and a current-time marker
 - Gantt range presets: All, Today, Within a week, From today, Manual
 - Hover the Gantt chart to see the time at the cursor position
 - Click a todo in the detailed view to expand its time details
@@ -30,5 +30,9 @@ Todos for each workspace are stored at:
 ```text
 <workspace>/.dsh/todo.jsonl
 ```
+
+Times are stored as Unix seconds. Todos are completed when `completedAt` is present; no separate completion flag is stored.
+
+Date-time inputs accept `yyyymmdd`, `yyyymmdd HH`, `yyyymmdd HH:mm`, and `yyyymmdd HH:mm:ss`.
 
 Deleting `.dsh/todo.jsonl` from a workspace will not affect the plugin itself, but it will clear that workspace's todo records.
